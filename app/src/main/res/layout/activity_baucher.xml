@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <!-- Título -->
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="¿Es correcto el valor de la venta?"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginTop="1dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvReciboLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="RECIBO: "
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvReciboValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:paddingEnd="16dp"
+                        android:text="748"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCULabel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="CU:"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvCUValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingEnd="16dp"
+                        android:text="021126685"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTERLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="TER:"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvTERValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingEnd="16dp"
+                        android:text="00B1LI5"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTRXLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="TRX:"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvTRXValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingEnd="16dp"
+                        android:text="199021"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvReferencia"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="SFNW02_CE2"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvVReferenciaValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingEnd="16dp"
+                        android:text="HGvH8yY"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvAutorizacion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="AUT:"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvAutorizacionValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingEnd="16dp"
+                        android:text="191652"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTarjeta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="MASTERCARD"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvTarjetaValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:paddingEnd="16dp"
+                        android:text="*** 1869"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTipoCuenta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="AHORROS"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCriptogramaLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="CRIPTOGRAMA:"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvCriptogramaValue"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|end"
+                        android:paddingEnd="16dp"
+                        android:text="0FF330889EB1B160"
+                        android:textColor="#B4000000"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <!-- Primer TextView en la mitad izquierda -->
+                    <TextView
+                        android:id="@+id/tvCompraNetaLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="COMPRA NETA:"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <!-- LinearLayout para los otros dos TextViews en la mitad derecha -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <!-- Segundo TextView (símbolo $) -->
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:text="$"
+                            android:textColor="#B4000000" />
+
+                        <!-- Tercer TextView (valor) -->
+                        <TextView
+                            android:id="@+id/tvCompraNetaValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:paddingEnd="16dp"
+                            android:text="126.840"
+                            android:textColor="#B4000000"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <!-- Primer TextView en la mitad izquierda -->
+                    <TextView
+                        android:id="@+id/tvIVALabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="IVA:"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <!-- LinearLayout para los otros dos TextViews en la mitad derecha -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <!-- Segundo TextView (símbolo $) -->
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:text="$"
+                            android:textColor="#B4000000" />
+
+                        <!-- Tercer TextView (valor) -->
+                        <TextView
+                            android:id="@+id/tvIVAValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:paddingEnd="16dp"
+                            android:text="0"
+                            android:textColor="#B4000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="1dp"
+                    android:orientation="horizontal">
+
+                    <!-- Primer TextView en la mitad izquierda -->
+                    <TextView
+                        android:id="@+id/tvIACLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="16dp"
+                        android:text="IAC:"
+                        android:textColor="#B4000000"
+                        android:textSize="14sp" />
+
+                    <!-- LinearLayout para los otros dos TextViews en la mitad derecha -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <!-- Segundo TextView (símbolo $) -->
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/poppins"
+                            android:text="$"
+                            android:textColor="#B4000000" />
+
+                        <!-- Tercer TextView (valor) -->
+                        <TextView
+                            android:id="@+id/tvIACValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:paddingEnd="16dp"
+                            android:text="0"
+                            android:textColor="#B4000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTotalCOPLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Total COP: $"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvIACLabel" />
+
+            <TextView
+                android:id="@+id/tvTotalCOPValue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-thin"
+                android:text="126.840"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvIACValue" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
